@@ -2,12 +2,14 @@ CSX - CSS Extended
 ~~~~~~~~~~~~~~~~~~
 
 **Variables**
+
 Variables let you store any css value and reuse them in a property::
 
 	$myGreen: #33dd33;
 	body { color: $myGreen; }
 
 **Classes**
+
 Classes are an easy way to define a set of properties you want to reuse througout the file::
 
 	$myClass {
@@ -16,6 +18,7 @@ Classes are an easy way to define a set of properties you want to reuse througou
 	}
 
 **Inheritance**
+
 Inheritance allows you to reuse the same set of properties defined in another class, selector, or even a set of classes and/or selectors.
 Properties can be overridden by rewriting them in the subclass::
 
@@ -35,6 +38,7 @@ Properties can be overridden by rewriting them in the subclass::
 	}
 
 **Property nesting**
+
 Property nesting lets you inherit properties from a parent selector. This helps keep your css clearly organized and indented::
 
 	div {
@@ -50,6 +54,7 @@ Property nesting lets you inherit properties from a parent selector. This helps 
 	}
 
 **Operators**
+
 Operators can be used to reuse variables such as sizes and work with them relatively. Trying to mix units will result in an error::
 
 	$fontSize: 12px;
@@ -65,6 +70,7 @@ Operators can be used to reuse variables such as sizes and work with them relati
 	}
 
 **Color operations**
+
 Operators work on colors as well, letting you darken and brighten them by a percentage or a hex number::
 
 	$myGreen: #33dd33;
@@ -77,6 +83,7 @@ Operators work on colors as well, letting you darken and brighten them by a perc
 
 
 **Multi-property assignments**
+
 With multi-property assignments, you avoid repetition when you want the same values for two different properties::
 
 	.cls {
@@ -84,6 +91,7 @@ With multi-property assignments, you avoid repetition when you want the same val
 	}
 
 **Builtin sprite support**
+
 Sprites made easy. The sprite() function will return an image (or an error, accordingly) when passed an url, x/y coords and x/y dimensions.
 The compiler will automagically transform this image into correct positions and sizes::
 
