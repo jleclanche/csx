@@ -104,10 +104,11 @@ The compiler will automagically transform this image into correct positions and 
 
 **Compile-time file inclusion**
 
-::
+The preprocessor can include and parse external files directly::
+
 	@include("misc.csx");
 
-... or in base64 (TBD)::
+... or even include them in base64 (TBD)::
 
 	$logo: @b64include("logo.png");
 	.logo {
