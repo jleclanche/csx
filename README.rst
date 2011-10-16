@@ -8,6 +8,8 @@ Variables let you store any css value and reuse them in a property::
 	$myGreen: #33dd33;
 	body { color: $myGreen; }
 
+Implemented by Sass as _Variables
+
 **Classes**
 
 Classes are an easy way to define a set of properties you want to reuse througout the file::
@@ -37,6 +39,8 @@ Properties can be overridden by rewriting them in the subclass::
 		border-color: black;
 	}
 
+Implementation by Sass _extends existing css classes, and separately implements _mixins.
+
 **Property nesting**
 
 Property nesting lets you inherit properties from a parent selector. This helps keep your css clearly organized and indented::
@@ -52,6 +56,8 @@ Property nesting lets you inherit properties from a parent selector. This helps 
 			/* div.abc */
 		}
 	}
+
+Sass supports _nesting.
 
 **Operators**
 
@@ -69,6 +75,8 @@ Operators can be used to reuse variables such as sizes and work with them relati
 		content: "Welcome to " + $myCompany + "!";
 	}
 
+Sass supports a wide range of _operations.
+
 **Color operations**
 
 Operators work on colors as well, letting you darken and brighten them by a percentage or a hex number::
@@ -81,6 +89,7 @@ Operators work on colors as well, letting you darken and brighten them by a perc
 		color: $myGreen - 10%;
 	}
 
+Sass can operate on _colors.
 
 **Multi-property assignments**
 
@@ -90,6 +99,8 @@ With multi-property assignments, you avoid repetition when you want the same val
 		border-top, border-bottom: 1px solid black;
 	}
 
+Unsupported by Sass.
+
 **Builtin sprite support**
 
 Sprites made easy. The sprite() function will return an image (or an error, accordingly) when passed an url, x/y coords and x/y dimensions.
@@ -98,9 +109,11 @@ The compiler will automagically transform this image into correct positions and 
 	$mySprite: url(/img/sprite.png);
 	$logo: sprite($mySprite, 0, 0, 30, 20); /* Coords in the image */
 	$logo2: sprite(url(/img/sprite2.png), 0, 0, 20, 20);
-	
+
 	.cls2 { background-image: $logo2; }
 	.cls3 { background-image: sprite(url(/img/sprite3.png), 0, 0, 15, 25); }
+
+Unsupported by Sass
 
 **Compile-time file inclusion**
 
@@ -114,4 +127,12 @@ The preprocessor can include and parse external files directly::
 	.logo {
 		background-image: url("data:image/png;base64," + $logo);
 	}
- 
+
+Unsupported by Sass.
+
+.. _Variables: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#variables_
+.. _extends: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#extend
+.. _mixins: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#mixins
+.. _nesting: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#nested_rules
+.. _operations: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#operations
+.. _colors: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#color_operations
