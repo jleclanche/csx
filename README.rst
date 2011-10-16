@@ -8,7 +8,7 @@ Variables let you store any css value and reuse them in a property::
 	$myGreen: #33dd33;
 	body { color: $myGreen; }
 
-Implemented by Sass as _Variables
+Implemented by Sass as `variables <http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#variables_>`
 
 **Classes**
 
@@ -39,7 +39,7 @@ Properties can be overridden by rewriting them in the subclass::
 		border-color: black;
 	}
 
-Implementation by Sass _extends existing css classes, and separately implements _mixins.
+Implementation by Sass `extends <http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#extend>` existing css classes, and separately implements `mixins <http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#mixins>`.
 
 **Property nesting**
 
@@ -57,7 +57,7 @@ Property nesting lets you inherit properties from a parent selector. This helps 
 		}
 	}
 
-Sass supports _nesting.
+Sass supports `nested rules <http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#nested_rules>`.
 
 **Operators**
 
@@ -75,7 +75,7 @@ Operators can be used to reuse variables such as sizes and work with them relati
 		content: "Welcome to " + $myCompany + "!";
 	}
 
-Sass supports a wide range of _operations.
+Sass supports a wide range of `operations <http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#operations>`.
 
 **Color operations**
 
@@ -89,7 +89,7 @@ Operators work on colors as well, letting you darken and brighten them by a perc
 		color: $myGreen - 10%;
 	}
 
-Sass can operate on _colors.
+Sass supports `color operations <http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#color_operations>`.
 
 **Multi-property assignments**
 
@@ -129,10 +129,3 @@ The preprocessor can include and parse external files directly::
 	}
 
 Unsupported by Sass.
-
-.. _Variables: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#variables_
-.. _extends: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#extend
-.. _mixins: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#mixins
-.. _nesting: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#nested_rules
-.. _operations: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#operations
-.. _colors: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#color_operations
