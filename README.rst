@@ -1,7 +1,7 @@
 CSX - CSS Extended
 ~~~~~~~~~~~~~~~~~~
 
-.. important::
+.. NOTE::
    CSX is a preliminary draft for a spec that predates `SCSS <http://sass-lang.com>`.
    It is only here for historical purposes.
 
