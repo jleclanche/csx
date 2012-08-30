@@ -1,6 +1,10 @@
 CSX - CSS Extended
 ~~~~~~~~~~~~~~~~~~
 
+.. important::
+   CSX is a preliminary draft for a spec that predates `SCSS <http://sass-lang.com>`.
+   It is only here for historical purposes.
+
 **Variables**
 
 Variables let you store any css value and reuse them in a property::
